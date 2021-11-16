@@ -1,0 +1,39 @@
+.cdx-Chartuk-icon svg {
+    transform: rotate(180deg);
+  }
+  
+  .cdx-Chartuk {
+    margin: 0;
+  }
+  
+  .cdx-Chartuk__text {
+    min-height: 158px;
+    margin-bottom: 10px;
+  }
+  
+  .cdx-Chartuk__caption {}
+  
+  .cdx-Chartuk [contentEditable=true][data-placeholder]::before{
+    position: absolute;
+    content: attr(data-placeholder);
+    color: #707684;
+    font-weight: normal;
+    opacity: 0;
+  }
+  
+  .cdx-Chartuk [contentEditable=true][data-placeholder]:empty::before {
+    opacity: 1;
+  }
+  
+  .cdx-Chartuk [contentEditable=true][data-placeholder]:empty:focus::before {
+    opacity: 0;
+  }
+  
+  
+  .cdx-Chartuk-settings {
+    display: flex;
+  }
+  
+  .cdx-Chartuk-settings .cdx-settings-button {
+    width: 50%;
+  }
