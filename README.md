@@ -28,3 +28,17 @@ var editorjs=new EditorJS({
 ...
 });
 ```
+
+## Output data
+
+```javascript
+{
+      "id": "TOhD4DOCu4",
+      "data": {
+        "text": "{\n  labels: [\n    'Red',\n    'Blue',\n    'Yellow'\n  ],\n  datasets: [{\n    label: 'My First Dataset',\n    data: [300, 50, 100],\n    backgroundColor: [\n      'rgb(255, 99, 132)',\n      'rgb(54, 162, 235)',\n      'rgb(255, 205, 86)'\n    ],\n    hoverOffset: 4\n  }]\n}",
+        "caption": "pie",
+        "alignment": "center"
+      },
+      "type": "chart"
+    }
+```
