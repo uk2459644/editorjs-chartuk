@@ -1,5 +1,4 @@
 require('./index.css').toString();
-
 import ToolboxIcon from '../assets/icon.svg';
 import  Chart  from 'chart.js/auto';
 

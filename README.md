@@ -64,6 +64,7 @@ var editorjs=new EditorJS({
       "type": "chart"
     }
 ```
+<<<<<<< HEAD
 ## Data input sample 
 
 ```javascript
@@ -92,3 +93,5 @@ var editorjs=new EditorJS({
         }]
     }
 ```
+=======
+>>>>>>> 39b9331592b6b5c1ba2c32f96959ff63108d187f
