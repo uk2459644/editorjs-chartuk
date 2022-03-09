@@ -1,6 +1,7 @@
 require('./index.css').toString();
+
 import ToolboxIcon from '../assets/icon.svg';
-import Chart from 'chart.js/auto';
+import  Chart  from 'chart.js/auto';
 
 export default  class Chartuk {
     /**
@@ -163,8 +164,8 @@ export default  class Chartuk {
       this.captionPlaceholder = config.captionPlaceholder || Chartuk.DEFAULT_CAPTION_PLACEHOLDER;
   
       this.data = {
-        text: data.text || '',
-        caption: data.caption || '',
+        text: data.text || 'Enter dataset in JSON format',
+        caption: data.caption || 'Enter type of chart e.g. bar, pie, bubble etc.',
         alignment: Object.values(ALIGNMENTS).includes(data.alignment) && data.alignment ||
         config.defaultAlignment ||
         DEFAULT_ALIGNMENT,
@@ -255,14 +256,21 @@ export default  class Chartuk {
      */
     _createChart(){
       const ctx=document.createElement('canvas');
-      // ctx.width='400px';
-      // ctx.height='400px';
+      //  ctx.width='400px';
+      //  ctx.height='400px';
       console.log(this.data.text);
       let json=JSON.parse(this.data.text);
       console.log(json);
       const myChart=new Chart(ctx,{
         type: this.data.caption,
         data: json, 
+      // options: {
+      //     scales: {
+      //         y: {
+      //             beginAtZero: true
+      //         }
+      //     }
+      // }
     });
 
       this.container.innerHTML='';
