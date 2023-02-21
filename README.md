@@ -1,4 +1,8 @@
 # Chart
+
+![editorjs-chartuk](https://user-images.githubusercontent.com/75515703/220291240-838fbfac-a219-40c1-9174-942f8a31bc6c.gif)
+
+
 Provides Block tool for charts content for the Editor.js. Tool uses Editor.js pasted patterns handling and inserts various charts mentioned on chart.js based pasted data. Data pasted should be upto mark with chart.js data with relative chart type.
 
 ## Installation

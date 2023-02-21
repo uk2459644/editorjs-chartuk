@@ -2,6 +2,12 @@ require('./index.css').toString();
 import ToolboxIcon from '../assets/icon.svg';
 import  Chart  from 'chart.js/auto';
 
+/**
+ * Author Upendra Kumar 
+ * Email: uk2459644@gmail.com
+ * 
+ */
+
 export default  class Chartuk {
     /**
      * Notify core that read-only mode is supported
